@@ -2,7 +2,7 @@ import telebot
 import openai
 
 
-openai.api_key = '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' #ключ OpenAi
+openai.api_key = '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' #ключ OpenAi
 
 
 bot = telebot.TeleBot('6893084576:AAEdVNS6m86KczspJxPWsWOwNDKHMft6TmA') #ключ телеграм бота 
@@ -23,7 +23,7 @@ def handle_message(message):#главная функция, которая пр�
     response = openai.Completion.create(
         engine="text-davinci-003",  #версия ии 
         prompt=user_input, 
-        max_tokens=150  #макс символов в ответе бота 
+        max_tokens=500 #макс символов в ответе бота 
     )
 
     
